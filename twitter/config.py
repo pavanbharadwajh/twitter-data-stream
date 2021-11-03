@@ -1,0 +1,16 @@
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
+GOOGLE_APPLICATION_CREDENTIALS="./twitter-stream-330604-51094aebd9cc.json"
+
+TWITTER_CONSUMER_KEY = os.getenv('TWITTER_CONSUMER_KEY')
+TWITTER_CONSUMER_SECRET = os.getenv('TWITTER_CONSUMER_SECRET')
+TWITTER_ACCESS_TOKEN = os.getenv('TWITTER_ACCESS_TOKEN')
+TWITTER_ACCESS_TOKEN_SECRET = os.getenv('TWITTER_ACCESS_TOKEN_SECRET')
+
+PROJECT_ID = os.getenv('GCP_PROJECT_ID')
+TOPIC_ID = os.getenv('GCP_TOPIC_ID')
+DATASET_ID = os.getenv('GCP_DATASET_ID')
+TABLE_ID = os.getenv('GCP_TABLE_ID')
